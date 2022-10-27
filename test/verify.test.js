@@ -36,20 +36,30 @@ afterEach(async () => {
   await browser.close();
 });
 
-describe("the webpage", () => {
-  it("should contain a table", async () => {
-    const tables = await page.$$("table");
-    expect(tables.length).toBe(1);
+describe("paragraph text", () => {
+  it("should have underlined text", async () => {
+    const title = await page.$("u");
+    expect(title).not.toBeNull();
   });
 });
 
-describe("the table", () => {
-  it("should contain a header row with three columns", async () => {
-    const headerRows = await page.$$("tr > th");
-    expect(headerRows.length).toBe(3);
+describe("paragraph text", () => {
+  it("should have emphasized text", async () => {
+    const heading = await page.$("em");
+    expect(heading).not.toBeNull();
   });
-  it("should contain two rows of data", async () => {
-    const headerRows = await page.$$("tr > td");
-    expect(headerRows.length).toBe(6);
+});
+
+describe("paragraph text", () => {
+  it("should have text that has been stuck through", async () => {
+    const paragraph = await page.$("s");
+    expect(paragraph).not.toBeNull();
+  });
+});
+
+describe("paragraph text", () => {
+  it("should have bold text", async () => {
+    const paragraph = await page.$("strong");
+    expect(paragraph).not.toBeNull();
   });
 });
