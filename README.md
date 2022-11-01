@@ -1,3 +1,7 @@
+# 008 Text Formatting
+
+[![008 Text Formatting](https://img.youtube.com/vi/C-Q5vjHfVBc/0.jpg)](https://www.youtube.com/watch?v=C-Q5vjHfVBc)
+
 The `index.html` file
 - should have some underlined text within the existing paragraph
 - should have some text that has been emphasized within the exiting paragraph
